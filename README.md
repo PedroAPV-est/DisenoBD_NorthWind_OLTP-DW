@@ -25,6 +25,7 @@ El análisis se centra principalmente en ventas, clientes, productos y desempeñ
 -	Shippers: Empresas encargadas del envío de productos.
 -	Region / Territories: Estructura geográfica para clasificación de clientes y empleados.
  
+
  
 4.	Tablas del Data Warehouse (DW)
  
@@ -89,6 +90,7 @@ Información del transportista:
 ![Diagrama DW](img/image.png)
 
 5.	Proceso ETL
+
 El proceso ETL se realizó en tres etapas:
 - Extracción:
 Datos obtenidos desde la base OLTP Northwind.
