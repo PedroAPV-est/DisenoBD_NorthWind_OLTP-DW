@@ -25,7 +25,7 @@ El análisis se centra principalmente en ventas, clientes, productos y desempeñ
 -	Shippers: Empresas encargadas del envío de productos.
 -	Region / Territories: Estructura geográfica para clasificación de clientes y empleados.
  
-
+![Diagrama DW](img/Screenshot.png)
  
 4.	Tablas del Data Warehouse (DW)
  
