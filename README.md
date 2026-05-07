@@ -30,64 +30,83 @@ El análisis se centra principalmente en ventas, clientes, productos y desempeñ
  
  
 Fact Table (Tablas Hechos)
--	Fact_Sales
+
+Fact_Sales
+
 Tabla central del modelo dimensional que almacena las métricas de negocio.
-o	OrderID 
-o	ProductID 
-o	CustomerID 
-o	EmployeeID 
-o	ShipperID 
-o	DateKey 
-o	Quantity 
-o	UnitPrice 
-o	Discount 
-o	Total
+- OrderID 
+- ProductID 
+- CustomerID 
+- EmployeeID 
+- ShipperID 
+- DateKey 
+- Quantity 
+- UnitPrice 
+- Discount 
+- Total
+
 Dimension Tables (Tablas Dimension)
--	Dim_Customer
+
+Dim_Customer
 Información descriptiva del cliente:
-o	CustomerID 
-o	CompanyName 
-o	City 
-o	Country 
--	Dim_Product
+- CustomerID 
+- CompanyName 
+- City 
+- Country
+
+Dim_Product
+
 Información del producto:
-o	ProductID 
-o	ProductName 
-o	CategoryName 
--	Dim_Date
+
+- ProductID
+- ProductName
+- CategoryName 
+
+Dim_Date
+
 Dimensión de tiempo para análisis temporal:
-o	DateKey 
-o	FullDate 
-o	Year 
-o	Month 
-o	Day 
--	Dim_Employee
+
+- DateKey
+- FullDate
+- Year
+- Month
+- Day 
+
+Dim_Employee
+
 Información del empleado:
-o	EmployeeID 
-o	FullName 
--	Dim_Shipper
+
+- EmployeeID 
+- FullName 
+
+Dim_Shipper
+
 Información del transportista:
-o	ShipperID 
-o	CompanyName
+
+- ShipperID
+- CompanyName
 
 ![Diagrama DW](img/image.png)
 
 5.	Proceso ETL
 El proceso ETL se realizó en tres etapas:
-o	Extracción:
+- Extracción:
 Datos obtenidos desde la base OLTP Northwind.
-o	Transformación
+- Transformación
 Unión de tablas (ej. Products + Categories) 
-	Formateo de fechas 
-	Concatenación de campos (nombre completo empleado) 
-o	Carga
+- Formateo de fechas 
+- Concatenación de campos (nombre completo empleado) 
+- Carga
 Inserción de datos en las tablas del Data Warehouse.
+
 6.	Decisiones de diseño
-	Uso de modelo en estrella (Star Schema)
-	Implementación de clave de tiempo (DateKey)
-	Total Venta = Cantidad×PrecioUnitario×(1−Descuento)
-	Ventas por país= ∑(Cantidad×PrecioUnitario)
-7.	Resultado final
+
+- Uso de modelo en estrella (Star Schema)
+- Implementación de clave de tiempo (DateKey)
+- Total Venta = Cantidad×PrecioUnitario×(1−Descuento)
+- Ventas por país= ∑(Cantidad×PrecioUnitario)
+
+7. Resultado final
 El sistema permite realizar análisis como:
 -	Ventas por país 
 -	Ventas por producto 
