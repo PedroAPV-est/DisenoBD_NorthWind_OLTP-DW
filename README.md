@@ -131,6 +131,7 @@ Orden recomendado de ejecución
   1.	Ejecutar OLTP.sql 
   2.	Ejecutar DW.sql 
   3.	Ejecutar ETL.sql 
+
 Opcionalmente, los archivos .dacpac pueden importarse directamente utilizando SQL Server o Visual Studio para desplegar automáticamente la estructura de la base de datos de DW.
 
 10. Conclusión
