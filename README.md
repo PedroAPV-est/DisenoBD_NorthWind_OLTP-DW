@@ -137,4 +137,5 @@ Opcionalmente, los archivos .dacpac pueden importarse directamente utilizando SQ
 10. Conclusión
 Este proyecto demuestra la transformación de un sistema OLTP normalizado a un Data Warehouse optimizado para análisis, aplicando procesos ETL y modelado dimensional para soporte de decisiones empresariales.
 
+ScreenShot de compilacion de DW en Visual Studio para extraer el archivo .dacpac:
 ![Diagrama DW](img/compilacion.png)
