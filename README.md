@@ -118,6 +118,20 @@ El sistema permite realizar análisis como:
 8.	Tecnologías utilizadas
 -	SQL Server 
 -	SQL Server Management Studio (SSMS) 
--	Modelo dimensional (Star Schema) 
-9.	Conclusión
+-	Modelo dimensional (Star Schema)
+
+9. Instrucciones:
+
+El proyecto incluye los archivos necesarios para recrear la arquitectura completa del sistema OLTP, el proceso ETL y el Data Warehouse.
+-	OLTP.sql: contiene el script de creación de la base de datos transaccional Northwind (OLTP), incluyendo tablas, relaciones y restricciones. 
+-	DW.sql: contiene la estructura del Data Warehouse, incluyendo tablas de dimensiones y tabla de hechos del modelo estrella. 
+-	ETL.sql: contiene el proceso ETL encargado de extraer datos desde el OLTP, transformarlos y cargarlos al Data Warehouse. 
+-	.dacpac: paquetes de despliegue de base de datos generados desde Visual Studio, utilizados para importar o publicar rápidamente la estructura de las bases de datos en otro entorno SQL Server. 
+Orden recomendado de ejecución
+  1.	 Ejecutar OLTP.sql 
+  2.	 Ejecutar DW.sql 
+  3.	 Ejecutar ETL.sql 
+Opcionalmente, los archivos .dacpac pueden importarse directamente utilizando SQL Server o Visual Studio para desplegar automáticamente la estructura de la base de datos.
+
+10. Conclusión
 Este proyecto demuestra la transformación de un sistema OLTP normalizado a un Data Warehouse optimizado para análisis, aplicando procesos ETL y modelado dimensional para soporte de decisiones empresariales.
