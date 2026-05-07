@@ -68,7 +68,10 @@ o	FullName
 -	Dim_Shipper
 Información del transportista:
 o	ShipperID 
-o	CompanyName 
+o	CompanyName
+
+![Diagrama DW](img/image.png)
+
 5.	Proceso ETL
 El proceso ETL se realizó en tres etapas:
 o	Extracción:
