@@ -128,10 +128,10 @@ El proyecto incluye los archivos necesarios para recrear la arquitectura complet
 -	ETL.sql: contiene el proceso ETL encargado de extraer datos desde el OLTP, transformarlos y cargarlos al Data Warehouse. 
 -	.dacpac: paquetes de despliegue de base de datos generados desde Visual Studio, utilizados para importar o publicar rápidamente la estructura de las bases de datos en otro entorno SQL Server. 
 Orden recomendado de ejecución
-  1.	 Ejecutar OLTP.sql 
-  2.	 Ejecutar DW.sql 
-  3.	 Ejecutar ETL.sql 
-Opcionalmente, los archivos .dacpac pueden importarse directamente utilizando SQL Server o Visual Studio para desplegar automáticamente la estructura de la base de datos.
+  1.	Ejecutar OLTP.sql 
+  2.	Ejecutar DW.sql 
+  3.	Ejecutar ETL.sql 
+Opcionalmente, los archivos .dacpac pueden importarse directamente utilizando SQL Server o Visual Studio para desplegar automáticamente la estructura de la base de datos de DW.
 
 10. Conclusión
 Este proyecto demuestra la transformación de un sistema OLTP normalizado a un Data Warehouse optimizado para análisis, aplicando procesos ETL y modelado dimensional para soporte de decisiones empresariales.
